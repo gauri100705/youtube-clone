@@ -1,0 +1,89 @@
+.sidebar{
+    position:fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    width: 72px;
+    background-color:white  ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8px;
+    z-index: 1000;
+}
+.sidebar-item{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar-item button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 14px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    gap: 6px;
+}
+.sidebar-item button:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+} 
+.sidebar-item svg{
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+.sidebar-text{
+    font-size: 9px;
+    padding-top: 0px;
+    text-align: center;
+    line-height: 12px;
+    white-space: normal;
+    max-width: 60px;
+    word-wrap: break-word;
+    display: block;
+}
+.you-panel {
+  display: none;
+  position: absolute;
+  left: 72px;
+  top: 0px;
+  width: 240px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+}
+.sidebar-item button:hover .you-panel {
+  display: block;
+}
+.panel-title {
+  font-weight: 600;
+  padding: 8px 20px;
+  font-size: 18px;
+}
+.panel-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.panel-item svg {
+  height: 20px;
+}
+.panel-item svg, .panel-item i{
+    width: 18px;
+}
+.panel-item:hover {
+  background: #f2f2f2;
+}

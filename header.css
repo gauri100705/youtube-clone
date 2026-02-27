@@ -1,0 +1,232 @@
+        .header {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            justify-content: space-between; 
+            position: fixed;
+            top: 0; 
+            left: 0;
+            right: 0;
+            background-color: white;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(228, 227, 227);
+            z-index: 100;
+            }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 180px;
+        }
+        .menu-icon {
+            font-size: 22px;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+        .logo {
+            width: 90px;
+            height: 20px;
+        }
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+        .middle{
+            flex:1;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            max-width: 600px;
+        }
+        .search-container{
+           display: flex;
+           align-items: center;
+           width: 100%; 
+        }
+        .search-container input {
+            flex: 1;
+            height: 40px;
+            padding: 0 16px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 20px 0 0 20px;
+            font-size: 15px;
+            outline: none;
+        }
+        .search-container input:focus {
+            border-color: #ccc;
+        }
+        .search-bar {
+              flex: 1;
+              height: 100%;
+              padding: 0 14px;
+              font-size: 15px;
+              border: 1px solid #ccc;
+              border-right: none;
+              border-radius: 20px 0 0 20px;
+              outline: none;
+              margin-right: 30px;
+              width: 0;
+        }
+        .search-bar:focus {
+            border-color: #ccc;
+        }
+        .search-button {
+             width: 64px;
+             height: 40px;
+             border: 1px solid #ccc;
+             border-left: none;
+             border-radius: 0 20px 20px 0;
+             background: #f8f8f8;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             cursor: pointer;
+             position: relative;
+        }
+        .search-button .tool-text,
+        .l-button .tool-text,
+        .create-icon .tool-text,
+        .r-button .tool-text {
+            position: absolute;
+            background: gray;
+            color: white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 12px;
+            border-radius: 2px;
+            bottom:-30px;
+            opacity:0;
+            transition: opacity 0.15s ease;
+            pointer-events: none;
+        }
+        .search-button:hover .tool-text,
+        .l-button:hover .tool-text,
+        .create-icon:hover .tool-text,
+        .r-button:hover .tool-text {
+            opacity:1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        .search-button svg {
+            width: 20px;
+            height: 20px;
+        }
+        .search-button:hover {
+            background: #eee;
+        }
+        .l-button {
+            border-radius: 50px;
+            border: none;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin: 0;
+            font-family: inherit;
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+            margin-left: 10px;
+            background-color: rgba(114, 110, 110, 0.1);
+        }
+        .l-button:hover, .create-icon:hover, .r-button:hover {
+            background-color: #ccc;
+        }
+        .r-button, .l-button, .create-icon{
+            transition: background-color 0.15s ease;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            width: auto;
+            gap: 14px;
+            justify-content: space-between;
+            padding-right: 10px;
+            flex-shrink: 0;
+        }
+        .bell {
+            position: relative;
+        }
+        .count {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            background-color: rgb(204, 28, 28);
+            color: white;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: roboto, arial;
+        }
+        .r-button{
+            text-decoration: none;
+            border-radius: 50%;
+            border: none;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        .right-icon {
+            width: 24px;
+            height: 24px;
+            fill: black;
+            cursor: pointer;
+        }
+        .profile-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #1a73e8;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .create-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            height: 36px;          
+            padding: 8px 20px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 1;
+            cursor: pointer;
+            width: 100px;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: white;
+        }
+        .create-icon span {
+            position: relative;
+            top: -0.5px; 
+            line-height: 1;
+            margin-top: 1px;
+        }
+        .plus {
+            width: 24px;
+            height: 24px;
+        }
+        
+          
